@@ -32,7 +32,7 @@ export default function RootLayout({
           <header className="border-b border-black/5 dark:border-white/5">
             <div className="mx-auto max-w-4xl px-6 py-4 flex items-center justify-between">
               <Link href="/" className="text-xl font-semibold">
-                YourName
+                
               </Link>
 
               <nav className="space-x-4 text-sm font-medium">
