@@ -53,7 +53,7 @@ export default function RootLayout({
 
           <footer className="border-t border-black/5 dark:border-white/5">
             <div className="mx-auto max-w-4xl px-6 py-6 text-sm text-zinc-600 dark:text-zinc-400">
-              © {new Date().getFullYear()} Your Name — built with Next.js
+              © {new Date().getFullYear()} Tristan Coates — built with Next.js
             </div>
           </footer>
         </div>
