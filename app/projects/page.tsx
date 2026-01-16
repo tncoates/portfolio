@@ -232,6 +232,22 @@ export default function ProjectsPage() {
 
       {/* Modal */}
       {open && <Modal project={open} onClose={() => setOpen(null)} />}
+
+        {/* LINKS */}
+        <div className="md:col-span-2 flex justify-center gap-6 pt-6">
+            <a
+              href="https://github.com/tncoates"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-blue-400 px-6 py-3
+                        text-sm font-medium
+                        hover:bg-blue-50 dark:hover:bg-zinc-800
+                        transition"
+            >
+              My GitHub
+            </a>
+
+        </div>
     </section>
   );
 }
