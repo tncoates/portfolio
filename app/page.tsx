@@ -84,7 +84,7 @@ export default function Home() {
               {[
                 "Java", "Python", "C", "Swift", "Bash", "JavaScript", "HTML", "CSS",
                 "TypeScript", "Tailwind CSS", "SQL", "React", "Node.js", "Electron.js",
-                "Next.js", "SpringBoot", "Docker", "Git"
+                "Next.js", "Flask", "SpringBoot", "Docker", "Git"
               ].map((s) => (
                 <li
                   key={s}

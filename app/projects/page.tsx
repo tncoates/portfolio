@@ -48,7 +48,12 @@ const projects: Project[] = [
     href: "https://github.com/tncoates/music-server",
     screenshot: "/music-server.png",
     long_desc: `
-    bomboclaaaaaaaat
+    This is a simple music server that I built using Node.js. The idea behind it was to be an easy way to
+    stream music files you already own to other devices on your home network using a home server or
+    Raspberry Pi. It supports mp3, m4a, flac, wav, and aac formats, and can extract metadata to get the
+    song name, artist, album, and album artwork. It also supports global media controls so that you can
+    control playback and skip songs even when you don't have it open. In the future I have plans to add
+    music metadata editing and other similar tools.
     `.trim()
 
   },
@@ -57,8 +62,13 @@ const projects: Project[] = [
     title: "Youtube Remote",
     desc: "A Youtube player built using Python, Flask, and FFplay",
     href: "https://github.com/tncoates/yt-remote",
-    long_desc: "hello"
-
+    screenshot: "/youtube-remote.png",
+    long_desc: `
+    This is a simple Youtube Player and Remote built using Python, yt-dlp, and FFplay. It uses a
+    simple Flask web UI to enter and search for Youtube videos, and videos are played using yt-dlp
+    streaming the video data to FFplay to display them. It supports queueing videos so that the
+    next video will automatically play when its finished.
+    `.trim()
   },
 ];
 
@@ -199,7 +209,7 @@ export default function ProjectsPage() {
                   View code
                 </a>
               ) : (
-                <span className="text-sm text-zinc-500">No public repo</span>
+                <span className="text-sm text-zinc-500"></span>
               )}
 
               {/* We removed the Read more link — the card itself opens the modal */}
@@ -207,7 +217,6 @@ export default function ProjectsPage() {
 
             {/* optional small indicator that card is clickable */}
             <div className="absolute right-3 top-3 text-xs text-zinc-400 group-hover:text-zinc-600">
-              Click for details
             </div>
           </article>
         ))}
