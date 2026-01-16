@@ -108,7 +108,14 @@ function Modal({
 
       {/* Modal panel */}
       <div
-        className="relative z-10 mx-4 max-w-3xl rounded-lg bg-white p-6 shadow-lg dark:bg-zinc-900 dark:text-zinc-100"
+        className="
+          relative z-10
+          w-[90vw] h-[90vh]
+          rounded-lg
+          bg-white p-6
+          shadow-lg
+          dark:bg-zinc-900
+          overflow-auto"
         onClick={(e) => e.stopPropagation()} // prevent backdrop close when clicking modal contents
       >
         <button
@@ -123,13 +130,15 @@ function Modal({
 
         <div className="mt-4">
           {project.screenshot ? (
-            <div className="mx-auto max-h-64 overflow-hidden rounded-md">
+            <div className="relative w-full aspect-[16/9] max-h-[60vh]">
               <Image
                 src={project.screenshot}
                 alt={`${project.title} screenshot`}
-                width={1200}
-                height={700}
-                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                fill
+                className="object-contain rounded-md"
+                sizes="(max-width: 640px) 100vw,
+                      (max-width: 1024px) 80vw,
+                      60vw"
               />
             </div>
           ) : (
@@ -212,7 +221,6 @@ export default function ProjectsPage() {
                 <span className="text-sm text-zinc-500"></span>
               )}
 
-              {/* We removed the Read more link — the card itself opens the modal */}
             </div>
 
             {/* optional small indicator that card is clickable */}
