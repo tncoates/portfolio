@@ -52,8 +52,8 @@ const projects: Project[] = [
     stream music files you already own to other devices on your home network using a home server or
     Raspberry Pi. It supports mp3, m4a, flac, wav, and aac formats, and can extract metadata to get the
     song name, artist, album, and album artwork. It also supports global media controls so that you can
-    control playback and skip songs even when you don't have it open. In the future I have plans to add
-    music metadata editing and other similar tools.
+    control playback and skip songs even when you don't have it open. I also recently added a music metadata
+    editor to update metadata and add album art to audio files.
     `.trim()
 
   },
@@ -68,6 +68,20 @@ const projects: Project[] = [
     simple Flask web UI to enter and search for Youtube videos, and videos are played using yt-dlp
     streaming the video data to FFplay to display them. It supports queueing videos so that the
     next video will automatically play when its finished.
+    `.trim()
+  },
+  {
+    id: "p5",
+    title: "Journal App",
+    desc: "A Chrome Extension for quick Journaling and Reminders",
+    href: "https://github.com/tncoates/journal",
+    screenshot: "/journal.png",
+    long_desc: `
+    This is a simple Chrome Extension I'm currently working on to help make it easier to manage
+    and keep track of your work. You can easily enter events using the extension popup and choose
+    if you want a reminder for it or not. Then there's a calendar view that lets you view all the events
+    you have previously added. Currently, next steps are a few small additions like editing and resolving
+    completed events, and setting up notifications.
     `.trim()
   },
 ];
