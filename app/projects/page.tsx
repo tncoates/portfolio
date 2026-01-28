@@ -10,6 +10,7 @@ type Project = {
   href?: string;
   screenshot?: string; // optional path under /public, e.g. "/probium.png"
   long_desc: string;
+  demo_href?: string;
 };
 
 const projects: Project[] = [
@@ -54,7 +55,8 @@ const projects: Project[] = [
     song name, artist, album, and album artwork. It also supports global media controls so that you can
     control playback and skip songs even when you don't have it open. I also recently added a music metadata
     editor to update metadata and add album art to audio files.
-    `.trim()
+    `.trim(),
+    demo_href: "https://demo-rho-one-59.vercel.app/"
 
   },
   {
@@ -178,6 +180,17 @@ function Modal({
             <span className="inline-block rounded-md border px-4 py-2 text-sm text-zinc-500">
               unavailable
             </span>
+          )}
+
+          {project.demo_href && (
+            <a
+              href={project.demo_href}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-md border px-4 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
+            >
+              View demo
+            </a>
           )}
 
           <button
