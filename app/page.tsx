@@ -62,7 +62,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold">About Me</h2>
           <p className="mt-4 text-[1.15rem] leading-8 text-zinc-700 dark:text-zinc-300">
 
-            Hey there! I'm Tristan Coates and I'm a passionate Software Developer from the 
+            Hi there! I'm Tristan Coates and I'm a passionate Software Developer from the 
             Northern Virginia Area. I attended Virginia Tech where I graduated in three years
             with a Bachelor's degree in Computer Science.
           </p>

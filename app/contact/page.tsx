@@ -10,7 +10,7 @@ export default function Contact() {
     <section className="max-w-xl space-y-6">
       <h1 className="text-3xl font-bold">Contact</h1>
       <p className="text-zinc-700 dark:text-zinc-300">
-        Want to work together or ask a question? Send me a message below.
+        Want to connect? Send me a message below.
       </p>
 
 
