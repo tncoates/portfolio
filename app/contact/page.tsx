@@ -1,3 +1,4 @@
+import something from "this-does-not-exist";
 // app/contact/page.tsx
 const email = "tristan.coates@gmail.com";
 
